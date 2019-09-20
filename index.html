@@ -14,11 +14,19 @@
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' renderer="gammaOutput: true; gammaFactor: 2,2;">
 <a-assets>
   <a-asset-item id="inquieta" src="https://raw.githubusercontent.com/DiegoRatti/AR_4SM/master/INQ.gltf"></a-asset-item>
+  <a-asset-item id="blend" src="https://raw.githubusercontent.com/DiegoRatti/AR_4SM/master/BLND.gltf"></a-asset-item>
 </a-assets>
 
 <a-marker id="animated-marker" type='barcode' value='5'>            
 <a-entity
 	gltf-model="#inquieta"                
+	scale="5.5 5.5 5.5">            
+</a-entity>        
+</a-marker>
+
+<a-marker id="animated-marker" type='barcode' value='4'>            
+<a-entity
+	gltf-model="#blend"                
 	scale="5.5 5.5 5.5">            
 </a-entity>        
 </a-marker>
