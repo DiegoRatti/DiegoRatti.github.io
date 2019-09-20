@@ -13,9 +13,42 @@
 	<!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' renderer="gammaOutput: true; gammaFactor: 2,2;">
 <a-assets>
-  <a-asset-item id="inquieta" src="https://raw.githubusercontent.com/DiegoRatti/AR_4SM/master/INQ.gltf"></a-asset-item>
+  <a-asset-item id="pack" src="https://raw.githubusercontent.com/DiegoRatti/AR_4SM/master/PCK.gltf"></a-asset-item>
+  <a-asset-item id="core" src="https://raw.githubusercontent.com/DiegoRatti/AR_4SM/master/CRE.gltf"></a-asset-item>
+  <a-asset-item id="square" src="https://raw.githubusercontent.com/DiegoRatti/AR_4SM/master/SQR.gltf"></a-asset-item>
   <a-asset-item id="blend" src="https://raw.githubusercontent.com/DiegoRatti/AR_4SM/master/BLND.gltf"></a-asset-item>
+  <a-asset-item id="inquieta" src="https://raw.githubusercontent.com/DiegoRatti/AR_4SM/master/INQ.gltf"></a-asset-item>
+  <a-asset-item id="eliptica" src="https://raw.githubusercontent.com/DiegoRatti/AR_4SM/master/ELIP.gltf"></a-asset-item>
+  <a-asset-item id="mundo" src="https://raw.githubusercontent.com/DiegoRatti/AR_4SM/master/MND.gltf"></a-asset-item>
 </a-assets>
+
+<a-marker id="animated-marker" type='barcode' value='1'>            
+<a-entity
+	gltf-model="#pack"                
+	scale="5.5 5.5 5.5">            
+</a-entity>        
+</a-marker>
+
+<a-marker id="animated-marker" type='barcode' value='2'>            
+<a-entity
+	gltf-model="#core"                
+	scale="5.5 5.5 5.5">            
+</a-entity>        
+</a-marker>
+	
+<a-marker id="animated-marker" type='barcode' value='3'>            
+<a-entity
+	gltf-model="#square"                
+	scale="5.5 5.5 5.5">            
+</a-entity>        
+</a-marker>
+	
+<a-marker id="animated-marker" type='barcode' value='4'>            
+<a-entity
+	gltf-model="#blend"                
+	scale="5.5 5.5 5.5">            
+</a-entity>        
+</a-marker>
 
 <a-marker id="animated-marker" type='barcode' value='5'>            
 <a-entity
@@ -23,10 +56,17 @@
 	scale="5.5 5.5 5.5">            
 </a-entity>        
 </a-marker>
-
-<a-marker id="animated-marker" type='barcode' value='4'>            
+	
+<a-marker id="animated-marker" type='barcode' value='6'>            
 <a-entity
-	gltf-model="#blend"                
+	gltf-model="#eliptica"                
+	scale="5.5 5.5 5.5">            
+</a-entity>        
+</a-marker>
+	
+<a-marker id="animated-marker" type='barcode' value='7'>            
+<a-entity
+	gltf-model="#mundo"                
 	scale="5.5 5.5 5.5">            
 </a-entity>        
 </a-marker>
